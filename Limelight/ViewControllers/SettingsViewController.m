@@ -35,16 +35,19 @@ static NSString* bitrateFormat = @"Bitrate: %.1f Mbps";
     } else {
         resolution = 0;
     }
-    NSInteger onscreenControls = [currentSettings.onscreenControls integerValue];
+    // No On Screen for tvOS
+    NSInteger onscreenControls = 0;//[currentSettings.onscreenControls integerValue];
     
     [self.resolutionSelector setSelectedSegmentIndex:resolution];
     [self.resolutionSelector addTarget:self action:@selector(newResolutionFpsChosen) forControlEvents:UIControlEventValueChanged];
     [self.framerateSelector setSelectedSegmentIndex:framerate];
     [self.framerateSelector addTarget:self action:@selector(newResolutionFpsChosen) forControlEvents:UIControlEventValueChanged];
     [self.onscreenControlSelector setSelectedSegmentIndex:onscreenControls];
+    /*
     [self.bitrateSlider setValue:(_bitrate / BITRATE_INTERVAL) animated:YES];
     [self.bitrateSlider addTarget:self action:@selector(bitrateSliderMoved) forControlEvents:UIControlEventValueChanged];
     [self updateBitrateText];
+     */
 }
 
 - (void) newResolutionFpsChosen {
@@ -62,17 +65,17 @@ static NSString* bitrateFormat = @"Bitrate: %.1f Mbps";
     }
     // 720p30 is 5 Mbps
     else {
-        defaultBitrate = 5000;
+        defaultBitrate = 20000;
     }
     
     _bitrate = defaultBitrate;
-    [self.bitrateSlider setValue:defaultBitrate / BITRATE_INTERVAL animated:YES];
+    //[self.bitrateSlider setValue:defaultBitrate / BITRATE_INTERVAL animated:YES];
     
     [self updateBitrateText];
 }
 
 - (void) bitrateSliderMoved {
-    _bitrate = BITRATE_INTERVAL * (int)self.bitrateSlider.value;
+    //_bitrate = BITRATE_INTERVAL * (int)self.bitrateSlider.value;
     [self updateBitrateText];
 }
 
@@ -86,7 +89,8 @@ static NSString* bitrateFormat = @"Bitrate: %.1f Mbps";
 }
 
 - (NSInteger) getChosenStreamHeight {
-    return [self.resolutionSelector selectedSegmentIndex] == 0 ? 720 : 1080;
+    return 1080;
+//    return [self.resolutionSelector selectedSegmentIndex] == 0 ? 720 : 1080;
 }
 
 - (NSInteger) getChosenStreamWidth {

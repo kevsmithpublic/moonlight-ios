@@ -135,6 +135,9 @@
 
 #import <UIKit/UIKit.h>
 
+@import GameController;
+
+
 @class SWRevealViewController;
 @protocol SWRevealViewControllerDelegate;
 
@@ -178,7 +181,7 @@ typedef NS_ENUM(NSInteger, SWRevealToggleAnimationType)
 };
 
 
-@interface SWRevealViewController : UIViewController
+@interface SWRevealViewController : GCEventViewController
 
 /* Basic API */
 

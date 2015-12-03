@@ -19,6 +19,10 @@
 
 static UIImage* noImage;
 
+-(App*) getApp {
+    return _app;
+}
+
 - (id) initWithApp:(App*)app cache:(NSCache*)cache andCallback:(id<AppCallback>)callback {
     self = [super init];
     _app = app;
@@ -31,11 +35,13 @@ static UIImage* noImage;
         noImage = [UIImage imageNamed:@"NoAppImage"];
     }
     
-    _appButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [_appButton setBackgroundImage:noImage forState:UIControlStateNormal];
+    //_appButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    _appButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    //[_appButton setBackgroundImage:noImage forState:UIControlStateNormal];
     [_appButton setContentEdgeInsets:UIEdgeInsetsMake(0, 4, 0, 4)];
     [_appButton sizeToFit];
-    [_appButton addTarget:self action:@selector(appClicked) forControlEvents:UIControlEventTouchUpInside];
+    
+    [_appButton addTarget:self action:@selector(appClicked) forControlEvents:UIControlEventPrimaryActionTriggered];
     
     [self addSubview:_appButton];
     [self sizeToFit];
@@ -67,6 +73,8 @@ static UIImage* noImage;
         _appOverlay.layer.shadowOffset = CGSizeMake(0, 0);
         _appOverlay.layer.shadowOpacity = 1;
         _appOverlay.layer.shadowRadius = 2.0;
+        _appOverlay.adjustsImageWhenAncestorFocused = YES;
+        _appOverlay.userInteractionEnabled=YES;
         
         [self addSubview:_appOverlay];
         

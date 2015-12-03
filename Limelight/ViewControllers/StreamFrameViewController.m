@@ -21,11 +21,16 @@
     StreamManager *_streamMan;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     [self.navigationController setNavigationBarHidden:YES animated:YES];
+    
+    //self.view.frame = CGRectMake(0, 0, 1920, 1080);
+    CGRect x = self.view.frame;
+    
+    Log(LOG_I, @"Screen Width: %f, Height: %f", self.view.frame.size.width,self.view.frame.size.height);
     
     [self.stageLabel setText:@"Starting App"];
     [self.stageLabel sizeToFit];
@@ -45,6 +50,8 @@
                                              selector:@selector(applicationWillResignActive:)
                                                  name:UIApplicationWillResignActiveNotification
                                                object:nil];
+
+  
 }
 
 - (void) returnToMainFrame {

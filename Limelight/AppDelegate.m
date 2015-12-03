@@ -18,8 +18,12 @@ static NSOperationQueue* mainQueue;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+#ifdef TARGET_OS_TV
+    //TODO: AddtvOS code
+#else
     [[UILabel appearance] setFont:[UIFont fontWithName:@"Roboto-Regular" size:[UIFont systemFontSize]]];
     [[UIButton appearance].titleLabel setFont:[UIFont fontWithName:@"Roboto-Regular" size:[UIFont systemFontSize]]];
+#endif
 
 
     // Generate selected segment background image
@@ -42,9 +46,13 @@ static NSOperationQueue* mainQueue;
     [[UISegmentedControl appearance] setBackgroundImage:[selectedSegmentBG imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
     
     // Change font on UISegmentedControl
+    
+#ifdef TARGET_OS_TV
+#else
     [[UISegmentedControl appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
                                                              [UIColor whiteColor], NSForegroundColorAttributeName,
                                                              [UIFont fontWithName:@"Roboto-Regular" size:[UIFont systemFontSize]], NSFontAttributeName, nil] forState:UIControlStateNormal];
+#endif
     
     return YES;
 }
@@ -151,7 +159,9 @@ static NSOperationQueue* mainQueue;
 // Returns the URL to the application's Documents directory.
 - (NSURL *)applicationDocumentsDirectory
 {
-    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+    //return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+    return [[[NSFileManager defaultManager] URLsForDirectory:NSCachesDirectory inDomains:NSUserDomainMask] lastObject];
+
 }
 
 - (NSURL*) getStoreURL {

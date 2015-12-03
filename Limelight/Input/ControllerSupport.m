@@ -239,7 +239,8 @@
         return;
     }
     
-    OnScreenControlsLevel level = OnScreenControlsLevelFull;
+    OnScreenControlsLevel level = OnScreenControlsLevelAutoGCExtendedGamepad;//OnScreenControlsLevelFull;
+    return;
     
     // We currently stop after the first controller we find.
     // Maybe we'll want to change that logic later.
@@ -293,9 +294,13 @@
     
     Log(LOG_I, @"Number of controllers connected: %ld", (long)[[GCController controllers] count]);
     for (GCController* controller in [GCController controllers]) {
-        [self assignController:controller];
-        [self registerControllerCallbacks:controller];
-        [self updateAutoOnScreenControlMode];
+        
+        // Ignore the tvRemote
+        if (![controller.vendorName isEqualToString:@"Remote"]) {
+            [self assignController:controller];
+            [self registerControllerCallbacks:controller];
+            [self updateAutoOnScreenControlMode];
+        }
     }
     
     self.connectObserver = [[NSNotificationCenter defaultCenter] addObserverForName:GCControllerDidConnectNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *note) {

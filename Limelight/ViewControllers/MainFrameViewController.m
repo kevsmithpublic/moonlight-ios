@@ -37,7 +37,7 @@
     AppAssetManager* _appManager;
     StreamConfiguration* _streamConfig;
     UIAlertController* _pairAlert;
-    UIScrollView* hostScrollView;
+    ComputerScrollView* hostScrollView;
     int currentPosition;
     NSArray* _sortedAppList;
     NSCache* _boxArtCache;
@@ -543,7 +543,7 @@ static NSMutableSet* hostList;
     
     self.collectionView.delaysContentTouches = NO;
     self.collectionView.allowsMultipleSelection = NO;
-    self.collectionView.multipleTouchEnabled = NO;
+    //self.collectionView.multipleTouchEnabled = NO;
     
     [self retrieveSavedHosts];
     _discMan = [[DiscoveryManager alloc] initWithHosts:[hostList allObjects] andCallback:self];
@@ -631,6 +631,18 @@ static NSMutableSet* hostList;
         }
         [self updateHosts];
     });
+}
+
+- (void)didUpdateFocusInContext:(UIFocusUpdateContext *)context withAnimationCoordinator:(UIFocusAnimationCoordinator *)coordinator
+{
+    UIView *next =context.nextFocusedView;
+    UIView *prev =context.previouslyFocusedView;
+    
+    if ([next isMemberOfClass:[UIButton class]]) {
+        next.layer.shadowColor = [[UIColor greenColor] CGColor];
+        prev.layer.shadowColor = [[UIColor blackColor] CGColor];
+    }
+    
 }
 
 - (void)updateHosts {
@@ -741,11 +753,10 @@ static NSMutableSet* hostList;
         [appView setCenter:CGPointMake(appView.bounds.size.width / 2 * scale, appView.bounds.size.height / 2 * scale)];
         appView.transform = CGAffineTransformMakeScale(scale, scale);
     }
-    
+  
     [cell.subviews.firstObject removeFromSuperview]; // Remove a view that was previously added
     [cell addSubview:appView];
 
-    
     UIBezierPath *shadowPath = [UIBezierPath bezierPathWithRect:cell.bounds];
     cell.layer.masksToBounds = NO;
     cell.layer.shadowColor = [UIColor blackColor].CGColor;
@@ -755,8 +766,10 @@ static NSMutableSet* hostList;
     
     cell.layer.borderColor = [[UIColor colorWithRed:0 green:0 blue:0 alpha:0.3f] CGColor];
     cell.layer.borderWidth = 1;
-    cell.exclusiveTouch = YES;
-
+    //cell.exclusiveTouch = YES;
+  
+    //imageView.userInteractionEnabled = YES;
+    
     return cell;
 }
 
@@ -798,6 +811,77 @@ static NSMutableSet* hostList;
 
 - (void) enableNavigation {
     self.navigationController.navigationBar.topItem.rightBarButtonItem.enabled = YES;
+}
+
+- (BOOL)collectionView:(UICollectionView *)collectionView
+canFocusItemAtIndexPath:(NSIndexPath *)indexPath {
+    return TRUE;
+}
+
+- (BOOL)collectionView:(UICollectionView *)colView shouldUpdateFocusInContext:(nonnull UICollectionViewFocusUpdateContext *)context {
+    return YES;
+}
+
+-(void)collectionView:(UICollectionView *)collectionView didUpdateFocusInContext:(nonnull UICollectionViewFocusUpdateContext *)context withAnimationCoordinator:(nonnull UIFocusAnimationCoordinator *)coordinator {
+    
+    
+    UIView *next = context.nextFocusedView;
+    UIView *prev = context.previouslyFocusedView;
+    
+    //UIAppView *app = next.subviews[0];
+    next.backgroundColor = [UIColor greenColor];
+    next.layer.shadowColor = [UIColor greenColor].CGColor;
+    
+    prev.backgroundColor = [UIColor clearColor];
+    prev.layer.shadowColor = [UIColor blackColor].CGColor;
+    
+    //Log(LOG_I, @"App : %@",[app getApp].name);
+    
+}
+
+-(BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell* cell = (UICollectionViewCell*)[collectionView cellForItemAtIndexPath:indexPath];
+    
+    UIAppView *app = cell.subviews[0];
+    [self appClicked:[app getApp]];
+}
+
+- (void)collectionView:(UICollectionView *)colView didHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell* cell = [colView cellForItemAtIndexPath:indexPath];
+    Log(LOG_I, @"Highlight row:%d, section:%d",indexPath.row,indexPath.section);
+    
+    UIAppView *app = cell.subviews[0];
+    Log(LOG_I, @"App : %@",[app getApp].name);
+    
+    //set color with animation
+    [UIView animateWithDuration:0.1
+                          delay:0
+                        options:(UIViewAnimationOptionAllowUserInteraction)
+                     animations:^{
+                         [cell setBackgroundColor:[UIColor colorWithRed:232/255.0f green:232/255.0f blue:232/255.0f alpha:1]];
+                     }
+                     completion:nil];
+}
+
+- (void)collectionView:(UICollectionView *)colView  didUnhighlightItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell* cell = [colView cellForItemAtIndexPath:indexPath];
+    //set color with animation
+    [UIView animateWithDuration:0.1
+                          delay:0
+                        options:(UIViewAnimationOptionAllowUserInteraction)
+                     animations:^{
+                         [cell setBackgroundColor:[UIColor clearColor]];
+                     }
+                     completion:nil ];
+}
+
+- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
 }
 
 @end

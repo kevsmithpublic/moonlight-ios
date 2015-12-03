@@ -7,8 +7,86 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0B28B41C0E6D0A00938173 /* libcrypto_tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0B28B11C0E6D0A00938173 /* libcrypto_tvOS.a */; };
+		0A0B28B51C0E6D0A00938173 /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0B28B21C0E6D0A00938173 /* libopus.a */; };
+		0A0B28B61C0E6D0A00938173 /* libssl_tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0B28B31C0E6D0A00938173 /* libssl_tvOS.a */; };
+		0A0B28B81C0E6DA300938173 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0B28B71C0E6DA200938173 /* libxml2.tbd */; };
+		0A0B28BA1C0E6DF900938173 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0B28B91C0E6DF900938173 /* libz.tbd */; };
+		0A0B28BD1C0E714400938173 /* libmoonlight-tvos-common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0B28BC1C0E714400938173 /* libmoonlight-tvos-common.a */; };
+		0A0B28C11C0EA88E00938173 /* tvosStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0B28C01C0EA88E00938173 /* tvosStory.storyboard */; };
+		0A64908F1C0FB559007EE217 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A64908E1C0FB559007EE217 /* Assets.xcassets */; };
+		0ABCEDDE1C0DDE9C009CC92D /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABCEDDD1C0DDE9C009CC92D /* libiconv.tbd */; };
+		0ABCEDE01C0DDEB3009CC92D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABCEDDF1C0DDEB3009CC92D /* CoreGraphics.framework */; };
+		0ABCEDE21C0DDEC0009CC92D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABCEDE11C0DDEC0009CC92D /* CoreData.framework */; };
+		0ABCEDE41C0DDECA009CC92D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABCEDE31C0DDECA009CC92D /* UIKit.framework */; };
+		0ABCEDE61C0DDED6009CC92D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABCEDE51C0DDED6009CC92D /* Foundation.framework */; };
+		0ABCEDE81C0DDEE2009CC92D /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABCEDE71C0DDEE2009CC92D /* CoreFoundation.framework */; };
+		0AC312B11C0DD42E004FC165 /* AppCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC312361C0DD42E004FC165 /* AppCollectionView.m */; };
+		0AC312B21C0DD42E004FC165 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC312381C0DD42E004FC165 /* AppDelegate.m */; };
+		0AC312B31C0DD42E004FC165 /* ComputerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3123A1C0DD42E004FC165 /* ComputerScrollView.m */; };
+		0AC312B41C0DD42E004FC165 /* CryptoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3123D1C0DD42E004FC165 /* CryptoManager.m */; };
+		0AC312B51C0DD42E004FC165 /* IdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3123F1C0DD42E004FC165 /* IdManager.m */; };
+		0AC312B61C0DD42E004FC165 /* mkcert.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AC312401C0DD42E004FC165 /* mkcert.c */; };
+		0AC312B71C0DD42E004FC165 /* App.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC312451C0DD42E004FC165 /* App.m */; };
+		0AC312B81C0DD42E004FC165 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC312471C0DD42E004FC165 /* DataManager.m */; };
+		0AC312B91C0DD42E004FC165 /* Host.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3124A1C0DD42E004FC165 /* Host.m */; };
+		0AC312BA1C0DD42E004FC165 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3124C1C0DD42E004FC165 /* Settings.m */; };
+		0AC312BB1C0DD42E004FC165 /* TemporaryApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3124E1C0DD42E004FC165 /* TemporaryApp.m */; };
+		0AC312BC1C0DD42E004FC165 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AC3124F1C0DD42E004FC165 /* InfoPlist.strings */; };
+		0AC312BD1C0DD42E004FC165 /* Apache License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0AC312531C0DD42E004FC165 /* Apache License.txt */; };
+		0AC312BE1C0DD42E004FC165 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AC312541C0DD42E004FC165 /* Roboto-Black.ttf */; };
+		0AC312BF1C0DD42E004FC165 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AC312551C0DD42E004FC165 /* Roboto-BlackItalic.ttf */; };
+		0AC312C01C0DD42E004FC165 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AC312561C0DD42E004FC165 /* Roboto-Bold.ttf */; };
+		0AC312C11C0DD42E004FC165 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AC312571C0DD42E004FC165 /* Roboto-BoldItalic.ttf */; };
+		0AC312C21C0DD42E004FC165 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AC312581C0DD42E004FC165 /* Roboto-Italic.ttf */; };
+		0AC312C31C0DD42E004FC165 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AC312591C0DD42E004FC165 /* Roboto-Light.ttf */; };
+		0AC312C41C0DD42E004FC165 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AC3125A1C0DD42E004FC165 /* Roboto-LightItalic.ttf */; };
+		0AC312C51C0DD42E004FC165 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AC3125B1C0DD42E004FC165 /* Roboto-Medium.ttf */; };
+		0AC312C61C0DD42E004FC165 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AC3125C1C0DD42E004FC165 /* Roboto-MediumItalic.ttf */; };
+		0AC312C71C0DD42E004FC165 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AC3125D1C0DD42E004FC165 /* Roboto-Regular.ttf */; };
+		0AC312C81C0DD42E004FC165 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AC3125E1C0DD42E004FC165 /* Roboto-Thin.ttf */; };
+		0AC312C91C0DD42E004FC165 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AC3125F1C0DD42E004FC165 /* Roboto-ThinItalic.ttf */; };
+		0AC312CA1C0DD42E004FC165 /* RobotoCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AC312601C0DD42E004FC165 /* RobotoCondensed-Bold.ttf */; };
+		0AC312CB1C0DD42E004FC165 /* RobotoCondensed-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AC312611C0DD42E004FC165 /* RobotoCondensed-BoldItalic.ttf */; };
+		0AC312CC1C0DD42E004FC165 /* RobotoCondensed-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AC312621C0DD42E004FC165 /* RobotoCondensed-Italic.ttf */; };
+		0AC312CD1C0DD42E004FC165 /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AC312631C0DD42E004FC165 /* RobotoCondensed-Light.ttf */; };
+		0AC312CE1C0DD42E004FC165 /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AC312641C0DD42E004FC165 /* RobotoCondensed-LightItalic.ttf */; };
+		0AC312CF1C0DD42E004FC165 /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AC312651C0DD42E004FC165 /* RobotoCondensed-Regular.ttf */; };
+		0AC312D01C0DD42E004FC165 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC312661C0DD42E004FC165 /* Images.xcassets */; };
+		0AC312D11C0DD42E004FC165 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC312691C0DD42E004FC165 /* Controller.m */; };
+		0AC312D21C0DD42E004FC165 /* ControllerSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3126B1C0DD42E004FC165 /* ControllerSupport.m */; };
+		0AC312D31C0DD42E004FC165 /* OnScreenControls.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3126D1C0DD42E004FC165 /* OnScreenControls.m */; };
+		0AC312D41C0DD42E004FC165 /* StreamView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3126F1C0DD42E004FC165 /* StreamView.m */; };
+		0AC312D51C0DD42E004FC165 /* Limelight-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AC312701C0DD42E004FC165 /* Limelight-Info.plist */; };
+		0AC312D61C0DD42E004FC165 /* Limelight.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AC312721C0DD42E004FC165 /* Limelight.xcdatamodeld */; };
+		0AC312D71C0DD42E004FC165 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC312781C0DD42E004FC165 /* main.m */; };
+		0AC312D81C0DD42E004FC165 /* AppAssetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3127B1C0DD42E004FC165 /* AppAssetManager.m */; };
+		0AC312D91C0DD42E004FC165 /* AppAssetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3127D1C0DD42E004FC165 /* AppAssetResponse.m */; };
+		0AC312DA1C0DD42E004FC165 /* AppAssetRetriever.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3127F1C0DD42E004FC165 /* AppAssetRetriever.m */; };
+		0AC312DB1C0DD42E004FC165 /* AppListResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC312811C0DD42E004FC165 /* AppListResponse.m */; };
+		0AC312DC1C0DD42E004FC165 /* DiscoveryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC312831C0DD42E004FC165 /* DiscoveryManager.m */; };
+		0AC312DD1C0DD42E004FC165 /* DiscoveryWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC312851C0DD42E004FC165 /* DiscoveryWorker.m */; };
+		0AC312DE1C0DD42E004FC165 /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC312871C0DD42E004FC165 /* HttpManager.m */; };
+		0AC312DF1C0DD42E004FC165 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC312891C0DD42E004FC165 /* HttpRequest.m */; };
+		0AC312E01C0DD42E004FC165 /* HttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3128B1C0DD42E004FC165 /* HttpResponse.m */; };
+		0AC312E11C0DD42E004FC165 /* MDNSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3128D1C0DD42E004FC165 /* MDNSManager.m */; };
+		0AC312E21C0DD42E004FC165 /* PairManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3128F1C0DD42E004FC165 /* PairManager.m */; };
+		0AC312E31C0DD42E004FC165 /* ServerInfoResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC312911C0DD42E004FC165 /* ServerInfoResponse.m */; };
+		0AC312E41C0DD42E004FC165 /* WakeOnLanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC312931C0DD42E004FC165 /* WakeOnLanManager.m */; };
+		0AC312E51C0DD42E004FC165 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC312961C0DD42E004FC165 /* Connection.m */; };
+		0AC312E61C0DD42E004FC165 /* StreamConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC312981C0DD42E004FC165 /* StreamConfiguration.m */; };
+		0AC312E71C0DD42E004FC165 /* StreamManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3129A1C0DD42E004FC165 /* StreamManager.m */; };
+		0AC312E81C0DD42E004FC165 /* VideoDecoderRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3129C1C0DD42E004FC165 /* VideoDecoderRenderer.m */; };
+		0AC312E91C0DD42E004FC165 /* UIAppView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3129E1C0DD42E004FC165 /* UIAppView.m */; };
+		0AC312EA1C0DD42E004FC165 /* UIComputerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC312A01C0DD42E004FC165 /* UIComputerView.m */; };
+		0AC312EB1C0DD42E004FC165 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC312A31C0DD42E004FC165 /* Logger.m */; };
+		0AC312EC1C0DD42E004FC165 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC312A51C0DD42E004FC165 /* Utils.m */; };
+		0AC312ED1C0DD42E004FC165 /* LoadingFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC312A81C0DD42E004FC165 /* LoadingFrameViewController.m */; };
+		0AC312EE1C0DD42E004FC165 /* MainFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC312AA1C0DD42E004FC165 /* MainFrameViewController.m */; };
+		0AC312EF1C0DD42E004FC165 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC312AC1C0DD42E004FC165 /* SettingsViewController.m */; };
+		0AC312F01C0DD42E004FC165 /* StreamFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC312AE1C0DD42E004FC165 /* StreamFrameViewController.m */; };
+		0AC312F11C0DD42E004FC165 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC312B01C0DD42E004FC165 /* SWRevealViewController.m */; };
 		9832D1361BBCD5C50036EF48 /* TemporaryApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 9832D1351BBCD5C50036EF48 /* TemporaryApp.m */; };
-		987140041B04542F00AB57D5 /* libmoonlight-common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1E43101AE8B0F200AFF679 /* libmoonlight-common.a */; };
 		9E5D600B1A5A5A3900689918 /* Apache License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9E5D5FF81A5A5A3900689918 /* Apache License.txt */; };
 		9E5D600C1A5A5A3900689918 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E5D5FF91A5A5A3900689918 /* Roboto-Black.ttf */; };
 		9E5D600E1A5A5A3900689918 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E5D5FFB1A5A5A3900689918 /* Roboto-Bold.ttf */; };
@@ -77,27 +155,143 @@
 		FBFCB3351B50B29400089F8A /* App.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFCB3341B50B29400089F8A /* App.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		987140011B04541A00AB57D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 98A03B4519F3514B00861ACA /* moonlight-common.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = FB290E2D19B37A4E004C83CF;
-			remoteInfo = "moonlight-common";
-		};
-		FB1E430F1AE8B0F200AFF679 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 98A03B4519F3514B00861ACA /* moonlight-common.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FB290E2E19B37A4E004C83CF;
-			remoteInfo = "moonlight-common";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		0A0B28A61C0E583100938173 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = libsarm64/lib/iOS/libcrypto.a; sourceTree = "<group>"; };
+		0A0B28A71C0E583100938173 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = libsarm64/lib/iOS/libssl.a; sourceTree = "<group>"; };
+		0A0B28AA1C0E5B2700938173 /* libcrypto_tvOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto_tvOS.a; path = libsarm64/lib/libcrypto_tvOS.a; sourceTree = "<group>"; };
+		0A0B28AB1C0E5B2700938173 /* libssl_tvOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl_tvOS.a; path = libsarm64/lib/libssl_tvOS.a; sourceTree = "<group>"; };
+		0A0B28AE1C0E677600938173 /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopus.a; path = "libsarm64/opus/OpusKit/Submodules/Opus-iOS/Opus-iOS/dependencies/lib/libopus.a"; sourceTree = "<group>"; };
+		0A0B28B11C0E6D0A00938173 /* libcrypto_tvOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto_tvOS.a; path = libsarm64/libtvos/libcrypto_tvOS.a; sourceTree = "<group>"; };
+		0A0B28B21C0E6D0A00938173 /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopus.a; path = libsarm64/libtvos/libopus.a; sourceTree = "<group>"; };
+		0A0B28B31C0E6D0A00938173 /* libssl_tvOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl_tvOS.a; path = libsarm64/libtvos/libssl_tvOS.a; sourceTree = "<group>"; };
+		0A0B28B71C0E6DA200938173 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.0.sdk/usr/lib/libxml2.tbd; sourceTree = DEVELOPER_DIR; };
+		0A0B28B91C0E6DF900938173 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.0.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
+		0A0B28BC1C0E714400938173 /* libmoonlight-tvos-common.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libmoonlight-tvos-common.a"; path = "libsarm64/libtvos/libmoonlight-tvos-common.a"; sourceTree = "<group>"; };
+		0A0B28C01C0EA88E00938173 /* tvosStory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = tvosStory.storyboard; sourceTree = "<group>"; };
+		0A64908E1C0FB559007EE217 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../moonlight-ios/Moonlight tvOS/Assets.xcassets"; sourceTree = "<group>"; };
+		0ABCEDDD1C0DDE9C009CC92D /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.0.sdk/usr/lib/libiconv.tbd; sourceTree = DEVELOPER_DIR; };
+		0ABCEDDF1C0DDEB3009CC92D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		0ABCEDE11C0DDEC0009CC92D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.0.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		0ABCEDE31C0DDECA009CC92D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		0ABCEDE51C0DDED6009CC92D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		0ABCEDE71C0DDEE2009CC92D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.0.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		0AC312251C0DD3D8004FC165 /* Moonlight tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moonlight tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AC312301C0DD3D8004FC165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AC312351C0DD42E004FC165 /* AppCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCollectionView.h; sourceTree = "<group>"; };
+		0AC312361C0DD42E004FC165 /* AppCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCollectionView.m; sourceTree = "<group>"; };
+		0AC312371C0DD42E004FC165 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0AC312381C0DD42E004FC165 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0AC312391C0DD42E004FC165 /* ComputerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComputerScrollView.h; sourceTree = "<group>"; };
+		0AC3123A1C0DD42E004FC165 /* ComputerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComputerScrollView.m; sourceTree = "<group>"; };
+		0AC3123C1C0DD42E004FC165 /* CryptoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptoManager.h; sourceTree = "<group>"; };
+		0AC3123D1C0DD42E004FC165 /* CryptoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptoManager.m; sourceTree = "<group>"; };
+		0AC3123E1C0DD42E004FC165 /* IdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdManager.h; sourceTree = "<group>"; };
+		0AC3123F1C0DD42E004FC165 /* IdManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdManager.m; sourceTree = "<group>"; };
+		0AC312401C0DD42E004FC165 /* mkcert.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mkcert.c; sourceTree = "<group>"; };
+		0AC312411C0DD42E004FC165 /* mkcert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mkcert.h; sourceTree = "<group>"; };
+		0AC312431C0DD42E004FC165 /* App+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "App+CoreDataProperties.h"; sourceTree = "<group>"; };
+		0AC312441C0DD42E004FC165 /* App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = App.h; sourceTree = "<group>"; };
+		0AC312451C0DD42E004FC165 /* App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = App.m; sourceTree = "<group>"; };
+		0AC312461C0DD42E004FC165 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		0AC312471C0DD42E004FC165 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		0AC312481C0DD42E004FC165 /* Host+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Host+CoreDataProperties.h"; sourceTree = "<group>"; };
+		0AC312491C0DD42E004FC165 /* Host.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Host.h; sourceTree = "<group>"; };
+		0AC3124A1C0DD42E004FC165 /* Host.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Host.m; sourceTree = "<group>"; };
+		0AC3124B1C0DD42E004FC165 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		0AC3124C1C0DD42E004FC165 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		0AC3124D1C0DD42E004FC165 /* TemporaryApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemporaryApp.h; sourceTree = "<group>"; };
+		0AC3124E1C0DD42E004FC165 /* TemporaryApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemporaryApp.m; sourceTree = "<group>"; };
+		0AC312501C0DD42E004FC165 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AC312531C0DD42E004FC165 /* Apache License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Apache License.txt"; sourceTree = "<group>"; };
+		0AC312541C0DD42E004FC165 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		0AC312551C0DD42E004FC165 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		0AC312561C0DD42E004FC165 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		0AC312571C0DD42E004FC165 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		0AC312581C0DD42E004FC165 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		0AC312591C0DD42E004FC165 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		0AC3125A1C0DD42E004FC165 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		0AC3125B1C0DD42E004FC165 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		0AC3125C1C0DD42E004FC165 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		0AC3125D1C0DD42E004FC165 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		0AC3125E1C0DD42E004FC165 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		0AC3125F1C0DD42E004FC165 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		0AC312601C0DD42E004FC165 /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		0AC312611C0DD42E004FC165 /* RobotoCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-BoldItalic.ttf"; sourceTree = "<group>"; };
+		0AC312621C0DD42E004FC165 /* RobotoCondensed-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Italic.ttf"; sourceTree = "<group>"; };
+		0AC312631C0DD42E004FC165 /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
+		0AC312641C0DD42E004FC165 /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
+		0AC312651C0DD42E004FC165 /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		0AC312661C0DD42E004FC165 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0AC312681C0DD42E004FC165 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
+		0AC312691C0DD42E004FC165 /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
+		0AC3126A1C0DD42E004FC165 /* ControllerSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerSupport.h; sourceTree = "<group>"; };
+		0AC3126B1C0DD42E004FC165 /* ControllerSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerSupport.m; sourceTree = "<group>"; };
+		0AC3126C1C0DD42E004FC165 /* OnScreenControls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnScreenControls.h; sourceTree = "<group>"; };
+		0AC3126D1C0DD42E004FC165 /* OnScreenControls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnScreenControls.m; sourceTree = "<group>"; };
+		0AC3126E1C0DD42E004FC165 /* StreamView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamView.h; sourceTree = "<group>"; };
+		0AC3126F1C0DD42E004FC165 /* StreamView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamView.m; sourceTree = "<group>"; };
+		0AC312701C0DD42E004FC165 /* Limelight-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Limelight-Info.plist"; sourceTree = "<group>"; };
+		0AC312711C0DD42E004FC165 /* Limelight-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Limelight-Prefix.pch"; sourceTree = "<group>"; };
+		0AC312731C0DD42E004FC165 /* Limelight 0.3.0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Limelight 0.3.0.xcdatamodel"; sourceTree = "<group>"; };
+		0AC312741C0DD42E004FC165 /* Limelight 0.3.1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Limelight 0.3.1.xcdatamodel"; sourceTree = "<group>"; };
+		0AC312751C0DD42E004FC165 /* Limelight.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Limelight.xcdatamodel; sourceTree = "<group>"; };
+		0AC312761C0DD42E004FC165 /* Moonlight v1.0-2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Moonlight v1.0-2.xcdatamodel"; sourceTree = "<group>"; };
+		0AC312771C0DD42E004FC165 /* Moonlight v1.0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Moonlight v1.0.xcdatamodel"; sourceTree = "<group>"; };
+		0AC312781C0DD42E004FC165 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0AC3127A1C0DD42E004FC165 /* AppAssetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppAssetManager.h; sourceTree = "<group>"; };
+		0AC3127B1C0DD42E004FC165 /* AppAssetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppAssetManager.m; sourceTree = "<group>"; };
+		0AC3127C1C0DD42E004FC165 /* AppAssetResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppAssetResponse.h; sourceTree = "<group>"; };
+		0AC3127D1C0DD42E004FC165 /* AppAssetResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppAssetResponse.m; sourceTree = "<group>"; };
+		0AC3127E1C0DD42E004FC165 /* AppAssetRetriever.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppAssetRetriever.h; sourceTree = "<group>"; };
+		0AC3127F1C0DD42E004FC165 /* AppAssetRetriever.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppAssetRetriever.m; sourceTree = "<group>"; };
+		0AC312801C0DD42E004FC165 /* AppListResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppListResponse.h; sourceTree = "<group>"; };
+		0AC312811C0DD42E004FC165 /* AppListResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppListResponse.m; sourceTree = "<group>"; };
+		0AC312821C0DD42E004FC165 /* DiscoveryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryManager.h; sourceTree = "<group>"; };
+		0AC312831C0DD42E004FC165 /* DiscoveryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryManager.m; sourceTree = "<group>"; };
+		0AC312841C0DD42E004FC165 /* DiscoveryWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryWorker.h; sourceTree = "<group>"; };
+		0AC312851C0DD42E004FC165 /* DiscoveryWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryWorker.m; sourceTree = "<group>"; };
+		0AC312861C0DD42E004FC165 /* HttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpManager.h; sourceTree = "<group>"; };
+		0AC312871C0DD42E004FC165 /* HttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpManager.m; sourceTree = "<group>"; };
+		0AC312881C0DD42E004FC165 /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
+		0AC312891C0DD42E004FC165 /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
+		0AC3128A1C0DD42E004FC165 /* HttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpResponse.h; sourceTree = "<group>"; };
+		0AC3128B1C0DD42E004FC165 /* HttpResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpResponse.m; sourceTree = "<group>"; };
+		0AC3128C1C0DD42E004FC165 /* MDNSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDNSManager.h; sourceTree = "<group>"; };
+		0AC3128D1C0DD42E004FC165 /* MDNSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDNSManager.m; sourceTree = "<group>"; };
+		0AC3128E1C0DD42E004FC165 /* PairManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PairManager.h; sourceTree = "<group>"; };
+		0AC3128F1C0DD42E004FC165 /* PairManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PairManager.m; sourceTree = "<group>"; };
+		0AC312901C0DD42E004FC165 /* ServerInfoResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerInfoResponse.h; sourceTree = "<group>"; };
+		0AC312911C0DD42E004FC165 /* ServerInfoResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerInfoResponse.m; sourceTree = "<group>"; };
+		0AC312921C0DD42E004FC165 /* WakeOnLanManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WakeOnLanManager.h; sourceTree = "<group>"; };
+		0AC312931C0DD42E004FC165 /* WakeOnLanManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WakeOnLanManager.m; sourceTree = "<group>"; };
+		0AC312951C0DD42E004FC165 /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connection.h; sourceTree = "<group>"; };
+		0AC312961C0DD42E004FC165 /* Connection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connection.m; sourceTree = "<group>"; };
+		0AC312971C0DD42E004FC165 /* StreamConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamConfiguration.h; sourceTree = "<group>"; };
+		0AC312981C0DD42E004FC165 /* StreamConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamConfiguration.m; sourceTree = "<group>"; };
+		0AC312991C0DD42E004FC165 /* StreamManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamManager.h; sourceTree = "<group>"; };
+		0AC3129A1C0DD42E004FC165 /* StreamManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamManager.m; sourceTree = "<group>"; };
+		0AC3129B1C0DD42E004FC165 /* VideoDecoderRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoDecoderRenderer.h; sourceTree = "<group>"; };
+		0AC3129C1C0DD42E004FC165 /* VideoDecoderRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoDecoderRenderer.m; sourceTree = "<group>"; };
+		0AC3129D1C0DD42E004FC165 /* UIAppView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIAppView.h; sourceTree = "<group>"; };
+		0AC3129E1C0DD42E004FC165 /* UIAppView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIAppView.m; sourceTree = "<group>"; };
+		0AC3129F1C0DD42E004FC165 /* UIComputerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIComputerView.h; sourceTree = "<group>"; };
+		0AC312A01C0DD42E004FC165 /* UIComputerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIComputerView.m; sourceTree = "<group>"; };
+		0AC312A21C0DD42E004FC165 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		0AC312A31C0DD42E004FC165 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
+		0AC312A41C0DD42E004FC165 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		0AC312A51C0DD42E004FC165 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		0AC312A71C0DD42E004FC165 /* LoadingFrameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingFrameViewController.h; sourceTree = "<group>"; };
+		0AC312A81C0DD42E004FC165 /* LoadingFrameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingFrameViewController.m; sourceTree = "<group>"; };
+		0AC312A91C0DD42E004FC165 /* MainFrameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainFrameViewController.h; sourceTree = "<group>"; };
+		0AC312AA1C0DD42E004FC165 /* MainFrameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainFrameViewController.m; sourceTree = "<group>"; };
+		0AC312AB1C0DD42E004FC165 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		0AC312AC1C0DD42E004FC165 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		0AC312AD1C0DD42E004FC165 /* StreamFrameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamFrameViewController.h; sourceTree = "<group>"; };
+		0AC312AE1C0DD42E004FC165 /* StreamFrameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamFrameViewController.m; sourceTree = "<group>"; };
+		0AC312AF1C0DD42E004FC165 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		0AC312B01C0DD42E004FC165 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		9832D1341BBCD5C50036EF48 /* TemporaryApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TemporaryApp.h; path = Database/TemporaryApp.h; sourceTree = "<group>"; };
 		9832D1351BBCD5C50036EF48 /* TemporaryApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TemporaryApp.m; path = Database/TemporaryApp.m; sourceTree = "<group>"; };
-		98A03B4519F3514B00861ACA /* moonlight-common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "moonlight-common.xcodeproj"; path = "limelight-common-c/moonlight-common.xcodeproj"; sourceTree = "<group>"; };
 		9E5D5FF81A5A5A3900689918 /* Apache License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Apache License.txt"; sourceTree = "<group>"; };
 		9E5D5FF91A5A5A3900689918 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		9E5D5FFB1A5A5A3900689918 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
@@ -297,11 +491,29 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0AC312221C0DD3D8004FC165 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0B28BA1C0E6DF900938173 /* libz.tbd in Frameworks */,
+				0A0B28B81C0E6DA300938173 /* libxml2.tbd in Frameworks */,
+				0ABCEDDE1C0DDE9C009CC92D /* libiconv.tbd in Frameworks */,
+				0ABCEDE81C0DDEE2009CC92D /* CoreFoundation.framework in Frameworks */,
+				0ABCEDE61C0DDED6009CC92D /* Foundation.framework in Frameworks */,
+				0A0B28B41C0E6D0A00938173 /* libcrypto_tvOS.a in Frameworks */,
+				0A0B28B51C0E6D0A00938173 /* libopus.a in Frameworks */,
+				0A0B28BD1C0E714400938173 /* libmoonlight-tvos-common.a in Frameworks */,
+				0A0B28B61C0E6D0A00938173 /* libssl_tvOS.a in Frameworks */,
+				0ABCEDE41C0DDECA009CC92D /* UIKit.framework in Frameworks */,
+				0ABCEDE21C0DDEC0009CC92D /* CoreData.framework in Frameworks */,
+				0ABCEDE01C0DDEB3009CC92D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FB290CEB19B2C406004C83CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				987140041B04542F00AB57D5 /* libmoonlight-common.a in Frameworks */,
 				FB8946ED19F6AFE800339C8A /* libopus.a in Frameworks */,
 				FB8946EB19F6AFE100339C8A /* libcrypto.a in Frameworks */,
 				FB8946EC19F6AFE400339C8A /* libssl.a in Frameworks */,
@@ -320,6 +532,204 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AC312261C0DD3D8004FC165 /* Moonlight tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				0AC312341C0DD42E004FC165 /* Limelight */,
+				0A64908E1C0FB559007EE217 /* Assets.xcassets */,
+				0AC312301C0DD3D8004FC165 /* Info.plist */,
+			);
+			path = "Moonlight tvOS";
+			sourceTree = "<group>";
+		};
+		0AC312341C0DD42E004FC165 /* Limelight */ = {
+			isa = PBXGroup;
+			children = (
+				0AC312351C0DD42E004FC165 /* AppCollectionView.h */,
+				0AC312361C0DD42E004FC165 /* AppCollectionView.m */,
+				0AC312371C0DD42E004FC165 /* AppDelegate.h */,
+				0AC312381C0DD42E004FC165 /* AppDelegate.m */,
+				0AC312391C0DD42E004FC165 /* ComputerScrollView.h */,
+				0AC3123A1C0DD42E004FC165 /* ComputerScrollView.m */,
+				0AC3123B1C0DD42E004FC165 /* Crypto */,
+				0AC312421C0DD42E004FC165 /* Database */,
+				0AC3124F1C0DD42E004FC165 /* InfoPlist.strings */,
+				0AC312511C0DD42E004FC165 /* Font */,
+				0AC312661C0DD42E004FC165 /* Images.xcassets */,
+				0AC312671C0DD42E004FC165 /* Input */,
+				0AC312701C0DD42E004FC165 /* Limelight-Info.plist */,
+				0AC312711C0DD42E004FC165 /* Limelight-Prefix.pch */,
+				0AC312721C0DD42E004FC165 /* Limelight.xcdatamodeld */,
+				0AC312781C0DD42E004FC165 /* main.m */,
+				0AC312791C0DD42E004FC165 /* Network */,
+				0AC312941C0DD42E004FC165 /* Stream */,
+				0AC3129D1C0DD42E004FC165 /* UIAppView.h */,
+				0AC3129E1C0DD42E004FC165 /* UIAppView.m */,
+				0AC3129F1C0DD42E004FC165 /* UIComputerView.h */,
+				0AC312A01C0DD42E004FC165 /* UIComputerView.m */,
+				0AC312A11C0DD42E004FC165 /* Utility */,
+				0AC312A61C0DD42E004FC165 /* ViewControllers */,
+			);
+			path = Limelight;
+			sourceTree = SOURCE_ROOT;
+		};
+		0AC3123B1C0DD42E004FC165 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				0AC3123C1C0DD42E004FC165 /* CryptoManager.h */,
+				0AC3123D1C0DD42E004FC165 /* CryptoManager.m */,
+				0AC3123E1C0DD42E004FC165 /* IdManager.h */,
+				0AC3123F1C0DD42E004FC165 /* IdManager.m */,
+				0AC312401C0DD42E004FC165 /* mkcert.c */,
+				0AC312411C0DD42E004FC165 /* mkcert.h */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		0AC312421C0DD42E004FC165 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				0AC312431C0DD42E004FC165 /* App+CoreDataProperties.h */,
+				0AC312441C0DD42E004FC165 /* App.h */,
+				0AC312451C0DD42E004FC165 /* App.m */,
+				0AC312461C0DD42E004FC165 /* DataManager.h */,
+				0AC312471C0DD42E004FC165 /* DataManager.m */,
+				0AC312481C0DD42E004FC165 /* Host+CoreDataProperties.h */,
+				0AC312491C0DD42E004FC165 /* Host.h */,
+				0AC3124A1C0DD42E004FC165 /* Host.m */,
+				0AC3124B1C0DD42E004FC165 /* Settings.h */,
+				0AC3124C1C0DD42E004FC165 /* Settings.m */,
+				0AC3124D1C0DD42E004FC165 /* TemporaryApp.h */,
+				0AC3124E1C0DD42E004FC165 /* TemporaryApp.m */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		0AC312511C0DD42E004FC165 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				0AC312521C0DD42E004FC165 /* Roboto */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		0AC312521C0DD42E004FC165 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				0AC312531C0DD42E004FC165 /* Apache License.txt */,
+				0AC312541C0DD42E004FC165 /* Roboto-Black.ttf */,
+				0AC312551C0DD42E004FC165 /* Roboto-BlackItalic.ttf */,
+				0AC312561C0DD42E004FC165 /* Roboto-Bold.ttf */,
+				0AC312571C0DD42E004FC165 /* Roboto-BoldItalic.ttf */,
+				0AC312581C0DD42E004FC165 /* Roboto-Italic.ttf */,
+				0AC312591C0DD42E004FC165 /* Roboto-Light.ttf */,
+				0AC3125A1C0DD42E004FC165 /* Roboto-LightItalic.ttf */,
+				0AC3125B1C0DD42E004FC165 /* Roboto-Medium.ttf */,
+				0AC3125C1C0DD42E004FC165 /* Roboto-MediumItalic.ttf */,
+				0AC3125D1C0DD42E004FC165 /* Roboto-Regular.ttf */,
+				0AC3125E1C0DD42E004FC165 /* Roboto-Thin.ttf */,
+				0AC3125F1C0DD42E004FC165 /* Roboto-ThinItalic.ttf */,
+				0AC312601C0DD42E004FC165 /* RobotoCondensed-Bold.ttf */,
+				0AC312611C0DD42E004FC165 /* RobotoCondensed-BoldItalic.ttf */,
+				0AC312621C0DD42E004FC165 /* RobotoCondensed-Italic.ttf */,
+				0AC312631C0DD42E004FC165 /* RobotoCondensed-Light.ttf */,
+				0AC312641C0DD42E004FC165 /* RobotoCondensed-LightItalic.ttf */,
+				0AC312651C0DD42E004FC165 /* RobotoCondensed-Regular.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		0AC312671C0DD42E004FC165 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				0AC312681C0DD42E004FC165 /* Controller.h */,
+				0AC312691C0DD42E004FC165 /* Controller.m */,
+				0AC3126A1C0DD42E004FC165 /* ControllerSupport.h */,
+				0AC3126B1C0DD42E004FC165 /* ControllerSupport.m */,
+				0AC3126C1C0DD42E004FC165 /* OnScreenControls.h */,
+				0AC3126D1C0DD42E004FC165 /* OnScreenControls.m */,
+				0AC3126E1C0DD42E004FC165 /* StreamView.h */,
+				0AC3126F1C0DD42E004FC165 /* StreamView.m */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		0AC312791C0DD42E004FC165 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0AC3127A1C0DD42E004FC165 /* AppAssetManager.h */,
+				0AC3127B1C0DD42E004FC165 /* AppAssetManager.m */,
+				0AC3127C1C0DD42E004FC165 /* AppAssetResponse.h */,
+				0AC3127D1C0DD42E004FC165 /* AppAssetResponse.m */,
+				0AC3127E1C0DD42E004FC165 /* AppAssetRetriever.h */,
+				0AC3127F1C0DD42E004FC165 /* AppAssetRetriever.m */,
+				0AC312801C0DD42E004FC165 /* AppListResponse.h */,
+				0AC312811C0DD42E004FC165 /* AppListResponse.m */,
+				0AC312821C0DD42E004FC165 /* DiscoveryManager.h */,
+				0AC312831C0DD42E004FC165 /* DiscoveryManager.m */,
+				0AC312841C0DD42E004FC165 /* DiscoveryWorker.h */,
+				0AC312851C0DD42E004FC165 /* DiscoveryWorker.m */,
+				0AC312861C0DD42E004FC165 /* HttpManager.h */,
+				0AC312871C0DD42E004FC165 /* HttpManager.m */,
+				0AC312881C0DD42E004FC165 /* HttpRequest.h */,
+				0AC312891C0DD42E004FC165 /* HttpRequest.m */,
+				0AC3128A1C0DD42E004FC165 /* HttpResponse.h */,
+				0AC3128B1C0DD42E004FC165 /* HttpResponse.m */,
+				0AC3128C1C0DD42E004FC165 /* MDNSManager.h */,
+				0AC3128D1C0DD42E004FC165 /* MDNSManager.m */,
+				0AC3128E1C0DD42E004FC165 /* PairManager.h */,
+				0AC3128F1C0DD42E004FC165 /* PairManager.m */,
+				0AC312901C0DD42E004FC165 /* ServerInfoResponse.h */,
+				0AC312911C0DD42E004FC165 /* ServerInfoResponse.m */,
+				0AC312921C0DD42E004FC165 /* WakeOnLanManager.h */,
+				0AC312931C0DD42E004FC165 /* WakeOnLanManager.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0AC312941C0DD42E004FC165 /* Stream */ = {
+			isa = PBXGroup;
+			children = (
+				0AC312951C0DD42E004FC165 /* Connection.h */,
+				0AC312961C0DD42E004FC165 /* Connection.m */,
+				0AC312971C0DD42E004FC165 /* StreamConfiguration.h */,
+				0AC312981C0DD42E004FC165 /* StreamConfiguration.m */,
+				0AC312991C0DD42E004FC165 /* StreamManager.h */,
+				0AC3129A1C0DD42E004FC165 /* StreamManager.m */,
+				0AC3129B1C0DD42E004FC165 /* VideoDecoderRenderer.h */,
+				0AC3129C1C0DD42E004FC165 /* VideoDecoderRenderer.m */,
+			);
+			path = Stream;
+			sourceTree = "<group>";
+		};
+		0AC312A11C0DD42E004FC165 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				0AC312A21C0DD42E004FC165 /* Logger.h */,
+				0AC312A31C0DD42E004FC165 /* Logger.m */,
+				0AC312A41C0DD42E004FC165 /* Utils.h */,
+				0AC312A51C0DD42E004FC165 /* Utils.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		0AC312A61C0DD42E004FC165 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0AC312A71C0DD42E004FC165 /* LoadingFrameViewController.h */,
+				0AC312A81C0DD42E004FC165 /* LoadingFrameViewController.m */,
+				0AC312A91C0DD42E004FC165 /* MainFrameViewController.h */,
+				0AC312AA1C0DD42E004FC165 /* MainFrameViewController.m */,
+				0AC312AB1C0DD42E004FC165 /* SettingsViewController.h */,
+				0AC312AC1C0DD42E004FC165 /* SettingsViewController.m */,
+				0AC312AD1C0DD42E004FC165 /* StreamFrameViewController.h */,
+				0AC312AE1C0DD42E004FC165 /* StreamFrameViewController.m */,
+				0AC312AF1C0DD42E004FC165 /* SWRevealViewController.h */,
+				0AC312B01C0DD42E004FC165 /* SWRevealViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		9E5D5FF61A5A5A3900689918 /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -342,19 +752,11 @@
 			path = Roboto;
 			sourceTree = "<group>";
 		};
-		FB1E430C1AE8B0F200AFF679 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FB1E43101AE8B0F200AFF679 /* libmoonlight-common.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		FB290CE519B2C406004C83CF = {
 			isa = PBXGroup;
 			children = (
-				98A03B4519F3514B00861ACA /* moonlight-common.xcodeproj */,
 				FB290CF919B2C406004C83CF /* Limelight */,
+				0AC312261C0DD3D8004FC165 /* Moonlight tvOS */,
 				FB290CF019B2C406004C83CF /* Frameworks */,
 				FB290CEF19B2C406004C83CF /* Products */,
 			);
@@ -364,6 +766,7 @@
 			isa = PBXGroup;
 			children = (
 				FB290CEE19B2C406004C83CF /* Moonlight.app */,
+				0AC312251C0DD3D8004FC165 /* Moonlight tvOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -371,6 +774,23 @@
 		FB290CF019B2C406004C83CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A0B28BC1C0E714400938173 /* libmoonlight-tvos-common.a */,
+				0A0B28B91C0E6DF900938173 /* libz.tbd */,
+				0A0B28B71C0E6DA200938173 /* libxml2.tbd */,
+				0A0B28B11C0E6D0A00938173 /* libcrypto_tvOS.a */,
+				0A0B28B21C0E6D0A00938173 /* libopus.a */,
+				0A0B28B31C0E6D0A00938173 /* libssl_tvOS.a */,
+				0A0B28AE1C0E677600938173 /* libopus.a */,
+				0A0B28AA1C0E5B2700938173 /* libcrypto_tvOS.a */,
+				0A0B28AB1C0E5B2700938173 /* libssl_tvOS.a */,
+				0A0B28A61C0E583100938173 /* libcrypto.a */,
+				0A0B28A71C0E583100938173 /* libssl.a */,
+				0ABCEDE71C0DDEE2009CC92D /* CoreFoundation.framework */,
+				0ABCEDE51C0DDED6009CC92D /* Foundation.framework */,
+				0ABCEDE31C0DDECA009CC92D /* UIKit.framework */,
+				0ABCEDE11C0DDEC0009CC92D /* CoreData.framework */,
+				0ABCEDDF1C0DDEB3009CC92D /* CoreGraphics.framework */,
+				0ABCEDDD1C0DDE9C009CC92D /* libiconv.tbd */,
 				FB6DDEF31AE739100096499A /* libmoonlight-common.a */,
 				FB4679001A57048000377732 /* CoreFoundation.framework */,
 				FBD349571A003F05002D2A60 /* libsqlite3.dylib */,
@@ -406,6 +826,7 @@
 				FBDE86E419F82297001C18A8 /* UIAppView.h */,
 				FBDE86E519F82297001C18A8 /* UIAppView.m */,
 				FB290E7819B37D81004C83CF /* iPad.storyboard */,
+				0A0B28C01C0EA88E00938173 /* tvosStory.storyboard */,
 				FB290E7A19B38036004C83CF /* iPhone.storyboard */,
 				FB89463719F6473800339C8A /* Launch Screen.xib */,
 				FB290D0819B2C406004C83CF /* Images.xcassets */,
@@ -740,6 +1161,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0AC312241C0DD3D8004FC165 /* Moonlight tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AC312311C0DD3D8004FC165 /* Build configuration list for PBXNativeTarget "Moonlight tvOS" */;
+			buildPhases = (
+				0AC312211C0DD3D8004FC165 /* Sources */,
+				0AC312221C0DD3D8004FC165 /* Frameworks */,
+				0AC312231C0DD3D8004FC165 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Moonlight tvOS";
+			productName = "Moonlight tvOS";
+			productReference = 0AC312251C0DD3D8004FC165 /* Moonlight tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 		FB290CED19B2C406004C83CF /* Moonlight */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB290D2019B2C406004C83CF /* Build configuration list for PBXNativeTarget "Moonlight" */;
@@ -751,7 +1189,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				987140021B04541A00AB57D5 /* PBXTargetDependency */,
 			);
 			name = Moonlight;
 			productName = Limelight;
@@ -764,9 +1201,13 @@
 		FB290CE619B2C406004C83CF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Moonlight Stream";
 				TargetAttributes = {
+					0AC312241C0DD3D8004FC165 = {
+						CreatedOnToolsVersion = 7.1;
+					};
 					FB290CED19B2C406004C83CF = {
 						DevelopmentTeam = DM46QST4M7;
 					};
@@ -778,34 +1219,51 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = FB290CE519B2C406004C83CF;
 			productRefGroup = FB290CEF19B2C406004C83CF /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = FB1E430C1AE8B0F200AFF679 /* Products */;
-					ProjectRef = 98A03B4519F3514B00861ACA /* moonlight-common.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				FB290CED19B2C406004C83CF /* Moonlight */,
+				0AC312241C0DD3D8004FC165 /* Moonlight tvOS */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		FB1E43101AE8B0F200AFF679 /* libmoonlight-common.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libmoonlight-common.a";
-			remoteRef = FB1E430F1AE8B0F200AFF679 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
+		0AC312231C0DD3D8004FC165 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AC312C01C0DD42E004FC165 /* Roboto-Bold.ttf in Resources */,
+				0AC312D01C0DD42E004FC165 /* Images.xcassets in Resources */,
+				0AC312C41C0DD42E004FC165 /* Roboto-LightItalic.ttf in Resources */,
+				0AC312CC1C0DD42E004FC165 /* RobotoCondensed-Italic.ttf in Resources */,
+				0AC312CB1C0DD42E004FC165 /* RobotoCondensed-BoldItalic.ttf in Resources */,
+				0AC312C61C0DD42E004FC165 /* Roboto-MediumItalic.ttf in Resources */,
+				0AC312D51C0DD42E004FC165 /* Limelight-Info.plist in Resources */,
+				0AC312C21C0DD42E004FC165 /* Roboto-Italic.ttf in Resources */,
+				0AC312C31C0DD42E004FC165 /* Roboto-Light.ttf in Resources */,
+				0AC312C11C0DD42E004FC165 /* Roboto-BoldItalic.ttf in Resources */,
+				0AC312BF1C0DD42E004FC165 /* Roboto-BlackItalic.ttf in Resources */,
+				0AC312C81C0DD42E004FC165 /* Roboto-Thin.ttf in Resources */,
+				0AC312C71C0DD42E004FC165 /* Roboto-Regular.ttf in Resources */,
+				0AC312CE1C0DD42E004FC165 /* RobotoCondensed-LightItalic.ttf in Resources */,
+				0AC312BD1C0DD42E004FC165 /* Apache License.txt in Resources */,
+				0AC312CF1C0DD42E004FC165 /* RobotoCondensed-Regular.ttf in Resources */,
+				0AC312C51C0DD42E004FC165 /* Roboto-Medium.ttf in Resources */,
+				0AC312CD1C0DD42E004FC165 /* RobotoCondensed-Light.ttf in Resources */,
+				0AC312C91C0DD42E004FC165 /* Roboto-ThinItalic.ttf in Resources */,
+				0AC312CA1C0DD42E004FC165 /* RobotoCondensed-Bold.ttf in Resources */,
+				0AC312BE1C0DD42E004FC165 /* Roboto-Black.ttf in Resources */,
+				0A0B28C11C0EA88E00938173 /* tvosStory.storyboard in Resources */,
+				0AC312BC1C0DD42E004FC165 /* InfoPlist.strings in Resources */,
+				0A64908F1C0FB559007EE217 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FB290CEC19B2C406004C83CF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -828,6 +1286,56 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0AC312211C0DD3D8004FC165 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AC312DC1C0DD42E004FC165 /* DiscoveryManager.m in Sources */,
+				0AC312B51C0DD42E004FC165 /* IdManager.m in Sources */,
+				0AC312E51C0DD42E004FC165 /* Connection.m in Sources */,
+				0AC312EC1C0DD42E004FC165 /* Utils.m in Sources */,
+				0AC312DB1C0DD42E004FC165 /* AppListResponse.m in Sources */,
+				0AC312EB1C0DD42E004FC165 /* Logger.m in Sources */,
+				0AC312DE1C0DD42E004FC165 /* HttpManager.m in Sources */,
+				0AC312E01C0DD42E004FC165 /* HttpResponse.m in Sources */,
+				0AC312B81C0DD42E004FC165 /* DataManager.m in Sources */,
+				0AC312EA1C0DD42E004FC165 /* UIComputerView.m in Sources */,
+				0AC312D21C0DD42E004FC165 /* ControllerSupport.m in Sources */,
+				0AC312BA1C0DD42E004FC165 /* Settings.m in Sources */,
+				0AC312E41C0DD42E004FC165 /* WakeOnLanManager.m in Sources */,
+				0AC312D81C0DD42E004FC165 /* AppAssetManager.m in Sources */,
+				0AC312D41C0DD42E004FC165 /* StreamView.m in Sources */,
+				0AC312E61C0DD42E004FC165 /* StreamConfiguration.m in Sources */,
+				0AC312B21C0DD42E004FC165 /* AppDelegate.m in Sources */,
+				0AC312B31C0DD42E004FC165 /* ComputerScrollView.m in Sources */,
+				0AC312D11C0DD42E004FC165 /* Controller.m in Sources */,
+				0AC312D71C0DD42E004FC165 /* main.m in Sources */,
+				0AC312E81C0DD42E004FC165 /* VideoDecoderRenderer.m in Sources */,
+				0AC312EE1C0DD42E004FC165 /* MainFrameViewController.m in Sources */,
+				0AC312B71C0DD42E004FC165 /* App.m in Sources */,
+				0AC312DA1C0DD42E004FC165 /* AppAssetRetriever.m in Sources */,
+				0AC312B91C0DD42E004FC165 /* Host.m in Sources */,
+				0AC312E21C0DD42E004FC165 /* PairManager.m in Sources */,
+				0AC312ED1C0DD42E004FC165 /* LoadingFrameViewController.m in Sources */,
+				0AC312B41C0DD42E004FC165 /* CryptoManager.m in Sources */,
+				0AC312DD1C0DD42E004FC165 /* DiscoveryWorker.m in Sources */,
+				0AC312E91C0DD42E004FC165 /* UIAppView.m in Sources */,
+				0AC312B11C0DD42E004FC165 /* AppCollectionView.m in Sources */,
+				0AC312E71C0DD42E004FC165 /* StreamManager.m in Sources */,
+				0AC312F11C0DD42E004FC165 /* SWRevealViewController.m in Sources */,
+				0AC312DF1C0DD42E004FC165 /* HttpRequest.m in Sources */,
+				0AC312E31C0DD42E004FC165 /* ServerInfoResponse.m in Sources */,
+				0AC312F01C0DD42E004FC165 /* StreamFrameViewController.m in Sources */,
+				0AC312EF1C0DD42E004FC165 /* SettingsViewController.m in Sources */,
+				0AC312BB1C0DD42E004FC165 /* TemporaryApp.m in Sources */,
+				0AC312D91C0DD42E004FC165 /* AppAssetResponse.m in Sources */,
+				0AC312D61C0DD42E004FC165 /* Limelight.xcdatamodeld in Sources */,
+				0AC312D31C0DD42E004FC165 /* OnScreenControls.m in Sources */,
+				0AC312E11C0DD42E004FC165 /* MDNSManager.m in Sources */,
+				0AC312B61C0DD42E004FC165 /* mkcert.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FB290CEA19B2C406004C83CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -880,15 +1388,15 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		987140021B04541A00AB57D5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "moonlight-common";
-			targetProxy = 987140011B04541A00AB57D5 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
+		0AC3124F1C0DD42E004FC165 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AC312501C0DD42E004FC165 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		FB290CFC19B2C406004C83CF /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -900,6 +1408,74 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0AC312321C0DD3D8004FC165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Limelight/Limelight-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/limelight-common",
+					"$(SDKROOT)/usr/include/libxml2/**",
+					"$(PROJECT_DIR)/libs/**",
+				);
+				INFOPLIST_FILE = "Moonlight tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libsarm64/libtvos",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.smith.Moonlight-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		0AC312331C0DD3D8004FC165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Limelight/Limelight-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/limelight-common",
+					"$(SDKROOT)/usr/include/libxml2/**",
+					"$(PROJECT_DIR)/libs/**",
+				);
+				INFOPLIST_FILE = "Moonlight tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libsarm64/libtvos",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.smith.Moonlight-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
 		FB290D1E19B2C406004C83CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -988,7 +1564,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(PROJECT_DIR)/limelight-common-c/limelight-common",
+					"$(PROJECT_DIR)/limelight-common",
 					"$(SDKROOT)/usr/include/libxml2/**",
 					"$(PROJECT_DIR)/libs/**",
 				);
@@ -1018,7 +1594,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(PROJECT_DIR)/limelight-common-c/limelight-common",
+					"$(PROJECT_DIR)/limelight-common",
 					"$(SDKROOT)/usr/include/libxml2/**",
 					"$(PROJECT_DIR)/libs/**",
 				);
@@ -1039,6 +1615,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0AC312311C0DD3D8004FC165 /* Build configuration list for PBXNativeTarget "Moonlight tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AC312321C0DD3D8004FC165 /* Debug */,
+				0AC312331C0DD3D8004FC165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FB290CE919B2C406004C83CF /* Build configuration list for PBXProject "Moonlight" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1060,6 +1645,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		0AC312721C0DD42E004FC165 /* Limelight.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0AC312731C0DD42E004FC165 /* Limelight 0.3.0.xcdatamodel */,
+				0AC312741C0DD42E004FC165 /* Limelight 0.3.1.xcdatamodel */,
+				0AC312751C0DD42E004FC165 /* Limelight.xcdatamodel */,
+				0AC312761C0DD42E004FC165 /* Moonlight v1.0-2.xcdatamodel */,
+				0AC312771C0DD42E004FC165 /* Moonlight v1.0.xcdatamodel */,
+			);
+			currentVersion = 0AC312761C0DD42E004FC165 /* Moonlight v1.0-2.xcdatamodel */;
+			path = Limelight.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		FB290D0519B2C406004C83CF /* Limelight.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

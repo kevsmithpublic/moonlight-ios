@@ -41,6 +41,7 @@
         Log(LOG_I, @"Setting manual on-screen controls level: %d", (int)level);
         [onScreenControls setLevel:level];
     }
+    //[self.view addGe
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -51,6 +52,18 @@
         touchMoved = false;
     }
 }
+
+/*
+-(void) pressesBegan:(NSSet<UIPress *> *)presses withEvent:(UIPressesEvent *)event {
+    for (UIPress *item in presses) {
+        if (item.type== UIPressTypePlayPause) {
+            Log(LOG_D, @"Play pause");
+            return;
+        }
+    }
+    
+}
+ */
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
     if (![onScreenControls handleTouchMovedEvent:touches]) {

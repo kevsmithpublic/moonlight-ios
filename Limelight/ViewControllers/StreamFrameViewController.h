@@ -12,7 +12,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StreamFrameViewController : UIViewController <ConnectionCallbacks, EdgeDetectionDelegate>
+@import GameController;
+
+
+@interface StreamFrameViewController : GCEventViewController <ConnectionCallbacks, EdgeDetectionDelegate>
 @property (strong, nonatomic) IBOutlet UILabel *stageLabel;
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 @property (nonatomic) StreamConfiguration* streamConfig;

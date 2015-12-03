@@ -30,13 +30,19 @@ static const int LABEL_DY = 20;
      _hostButton.layer.shadowColor = [[UIColor blackColor] CGColor];
     _hostButton.layer.shadowOffset = CGSizeMake(5,8);
     _hostButton.layer.shadowOpacity = 0.7;
+    //_hostButton.backgroundColor
     
     _hostLabel = [[UILabel alloc] init];
     _hostStatus = [[UILabel alloc] init];
     _hostPairState = [[UILabel alloc] init];
+#ifdef TARGET_OS_TV
+    //TODO: AddtvOS code
+#else
     [_hostLabel setFont:[UIFont fontWithName:@"Roboto-Regular" size:[UIFont systemFontSize]]];
     [_hostStatus setFont:[UIFont fontWithName:@"Roboto-Regular" size:[UIFont systemFontSize]]];
 	[_hostPairState setFont:[UIFont fontWithName:@"Roboto-Regular" size:[UIFont systemFontSize]]];
+#endif
+    
     return self;
 }
 
@@ -46,7 +52,7 @@ static const int LABEL_DY = 20;
     
     [_hostButton setBackgroundImage:[UIImage imageNamed:@"Computer"] forState:UIControlStateNormal];
     [_hostButton setContentEdgeInsets:UIEdgeInsetsMake(0, 4, 0, 4)];
-    [_hostButton addTarget:self action:@selector(addClicked) forControlEvents:UIControlEventTouchUpInside];
+    [_hostButton addTarget:self action:@selector(addClicked) forControlEvents:UIControlEventPrimaryActionTriggered];
     [_hostButton sizeToFit];
     
     [_hostLabel setText:@"Add Host"];
@@ -57,6 +63,10 @@ static const int LABEL_DY = 20;
     UIImageView* addIcon = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"AddComputerIcon"]];
     [addIcon sizeToFit];
     addIcon.center = CGPointMake(_hostButton.frame.origin.x + _hostButton.frame.size.width, _hostButton.frame.origin.y);
+    
+    addIcon.adjustsImageWhenAncestorFocused = YES;
+    addIcon.userInteractionEnabled=YES;
+    
     
     // This is required to ensure this button is the same size as the others
     _hostPairState.text = @"None";
@@ -79,7 +89,7 @@ static const int LABEL_DY = 20;
     
     UILongPressGestureRecognizer* longPressRecognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(hostLongClicked)];
     [_hostButton addGestureRecognizer:longPressRecognizer];
-    [_hostButton addTarget:self action:@selector(hostClicked) forControlEvents:UIControlEventTouchUpInside];
+    [_hostButton addTarget:self action:@selector(hostClicked) forControlEvents:UIControlEventPrimaryActionTriggered];
     
     [self updateContentsForHost:host];
     [self updateBounds];
