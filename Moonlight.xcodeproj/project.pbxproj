@@ -14,7 +14,7 @@
 		0A0B28BA1C0E6DF900938173 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0B28B91C0E6DF900938173 /* libz.tbd */; };
 		0A0B28BD1C0E714400938173 /* libmoonlight-tvos-common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0B28BC1C0E714400938173 /* libmoonlight-tvos-common.a */; };
 		0A0B28C11C0EA88E00938173 /* tvosStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0B28C01C0EA88E00938173 /* tvosStory.storyboard */; };
-		0A64908F1C0FB559007EE217 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A64908E1C0FB559007EE217 /* Assets.xcassets */; };
+		0AB047F81C17CA0E0096A089 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AB047F71C17CA0E0096A089 /* Assets.xcassets */; };
 		0ABCEDDE1C0DDE9C009CC92D /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABCEDDD1C0DDE9C009CC92D /* libiconv.tbd */; };
 		0ABCEDE01C0DDEB3009CC92D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABCEDDF1C0DDEB3009CC92D /* CoreGraphics.framework */; };
 		0ABCEDE21C0DDEC0009CC92D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABCEDE11C0DDEC0009CC92D /* CoreData.framework */; };
@@ -168,7 +168,7 @@
 		0A0B28B91C0E6DF900938173 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.0.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
 		0A0B28BC1C0E714400938173 /* libmoonlight-tvos-common.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libmoonlight-tvos-common.a"; path = "libsarm64/libtvos/libmoonlight-tvos-common.a"; sourceTree = "<group>"; };
 		0A0B28C01C0EA88E00938173 /* tvosStory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = tvosStory.storyboard; sourceTree = "<group>"; };
-		0A64908E1C0FB559007EE217 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../moonlight-ios/Moonlight tvOS/Assets.xcassets"; sourceTree = "<group>"; };
+		0AB047F71C17CA0E0096A089 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Moonlight tvOS/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		0ABCEDDD1C0DDE9C009CC92D /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.0.sdk/usr/lib/libiconv.tbd; sourceTree = DEVELOPER_DIR; };
 		0ABCEDDF1C0DDEB3009CC92D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		0ABCEDE11C0DDEC0009CC92D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.0.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
@@ -536,7 +536,6 @@
 			isa = PBXGroup;
 			children = (
 				0AC312341C0DD42E004FC165 /* Limelight */,
-				0A64908E1C0FB559007EE217 /* Assets.xcassets */,
 				0AC312301C0DD3D8004FC165 /* Info.plist */,
 			);
 			path = "Moonlight tvOS";
@@ -545,6 +544,7 @@
 		0AC312341C0DD42E004FC165 /* Limelight */ = {
 			isa = PBXGroup;
 			children = (
+				0AB047F71C17CA0E0096A089 /* Assets.xcassets */,
 				0AC312351C0DD42E004FC165 /* AppCollectionView.h */,
 				0AC312361C0DD42E004FC165 /* AppCollectionView.m */,
 				0AC312371C0DD42E004FC165 /* AppDelegate.h */,
@@ -1260,7 +1260,7 @@
 				0AC312BE1C0DD42E004FC165 /* Roboto-Black.ttf in Resources */,
 				0A0B28C11C0EA88E00938173 /* tvosStory.storyboard in Resources */,
 				0AC312BC1C0DD42E004FC165 /* InfoPlist.strings in Resources */,
-				0A64908F1C0FB559007EE217 /* Assets.xcassets in Resources */,
+				0AB047F81C17CA0E0096A089 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
