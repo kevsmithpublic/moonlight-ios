@@ -33,4 +33,6 @@
 @property (nonatomic, strong) id connectObserver;
 @property (nonatomic, strong) id disconnectObserver;
 
+@property (readonly) Controller *firstPlayerController;
+
 @end
