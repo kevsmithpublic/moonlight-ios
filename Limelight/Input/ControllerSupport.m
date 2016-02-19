@@ -29,6 +29,10 @@
 #define UPDATE_BUTTON_FLAG(controller, x, y) \
 ((y) ? [self setButtonFlag:controller flags:x] : [self clearButtonFlag:controller flags:x])
 
+- (Controller *)firstPlayerController {
+    return _controllers[@0];
+}
+
 -(void) updateLeftStick:(Controller*)controller x:(short)x y:(short)y
 {
     @synchronized(controller) {

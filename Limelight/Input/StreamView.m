@@ -20,6 +20,11 @@
     float xDeltaFactor;
     float yDeltaFactor;
     float screenFactor;
+
+    UITapGestureRecognizer *_playPauseRecognizer;
+    UITapGestureRecognizer *_selectRecognizer;
+
+    ControllerSupport *_controllerSupport;
 }
 
 - (void) setMouseDeltaFactors:(float)x y:(float)y {
@@ -30,6 +35,8 @@
 }
 
 - (void) setupOnScreenControls:(ControllerSupport*)controllerSupport swipeDelegate:(id<EdgeDetectionDelegate>)swipeDelegate {
+    _controllerSupport = controllerSupport;
+
     onScreenControls = [[OnScreenControls alloc] initWithView:self controllerSup:controllerSupport swipeDelegate:swipeDelegate];
     DataManager* dataMan = [[DataManager alloc] init];
     OnScreenControlsLevel level = (OnScreenControlsLevel)[[dataMan retrieveSettings].onscreenControls integerValue];
@@ -41,7 +48,20 @@
         Log(LOG_I, @"Setting manual on-screen controls level: %d", (int)level);
         [onScreenControls setLevel:level];
     }
-    //[self.view addGe
+
+    [self clearGestureRecognizers];
+
+    _playPauseRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(remotePlayPause:)];
+    _playPauseRecognizer.allowedPressTypes = @[@(UIPressTypePlayPause)];
+    [self.window addGestureRecognizer:_playPauseRecognizer];
+
+    _selectRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(remoteSelected:)];
+    _selectRecognizer.allowedPressTypes = @[@(UIPressTypeSelect)];
+    [self.window addGestureRecognizer:_selectRecognizer];
+}
+
+- (void)dealloc {
+    [self clearGestureRecognizers];
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -104,7 +124,7 @@
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     Log(LOG_D, @"Touch up");
     if (![onScreenControls handleTouchUpEvent:touches]) {
-        if (!touchMoved) {
+        /*if (!touchMoved) {
             if ([[event allTouches] count]  == 2) {
                 Log(LOG_D, @"Sending right mouse button press");
                 
@@ -126,11 +146,44 @@
                 
                 LiSendMouseButtonEvent(BUTTON_ACTION_RELEASE, BUTTON_LEFT);
             }
-        }
+        }*/
     }
 }
 
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
+}
+
+- (void)clearGestureRecognizers {
+    [_playPauseRecognizer.view removeGestureRecognizer:_playPauseRecognizer];
+    [_selectRecognizer.view removeGestureRecognizer:_selectRecognizer];
+}
+
+- (void)remotePlayPause:(UITapGestureRecognizer *)playPause {
+    Log(LOG_D, @"Play/Pause pressed");
+
+    Controller *controller = _controllerSupport.firstPlayerController;
+
+    [_controllerSupport setButtonFlag:controller flags:SPECIAL_FLAG];
+
+    [_controllerSupport updateFinished:controller];
+
+    // Wait 100 ms to simulate a real button press
+    usleep(100 * 1000);
+
+    [_controllerSupport clearButtonFlag:controller flags:SPECIAL_FLAG];
+
+    [_controllerSupport updateFinished:controller];
+}
+
+- (void)remoteSelected:(UITapGestureRecognizer *)gestureRecongizer {
+    Log(LOG_D, @"Sending left mouse button press");
+
+    LiSendMouseButtonEvent(BUTTON_ACTION_PRESS, BUTTON_LEFT);
+
+    // Wait 100 ms to simulate a real button press
+    usleep(100 * 1000);
+
+    LiSendMouseButtonEvent(BUTTON_ACTION_RELEASE, BUTTON_LEFT);
 }
 
 
